@@ -1,4 +1,5 @@
 import unittest
+from calculator import add, subtract, div, logarithm
 
 
 class TestCalculator(unittest.TestCase):
@@ -32,7 +33,7 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self): # 3 assertions
-        self.assertAlmostEqual(logarithm(8, 2) 3)
+        self.assertAlmostEqual(logarithm(8, 2), 3)
         self.assertAlmostEqual(logarithm(9, 3), 2)
         self.assertAlmostEqual(logarithm(81, 3), 4)
 

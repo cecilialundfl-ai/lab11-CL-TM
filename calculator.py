@@ -10,10 +10,10 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    try:
-        return b / a # raise ZeroDivisionError if a == 0
-    except ZeroDivisionError:
-        print("Division by zero")
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a
+
 
 def log(a, b):
     if a <= 0:
@@ -25,7 +25,6 @@ def log(a, b):
 def exp(a, b):
     return a ** b
 
-print(log(16, 1))
 
 
 import math
